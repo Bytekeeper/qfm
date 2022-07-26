@@ -10,5 +10,5 @@ eframe = "0.18"
 open = "3.0"
 
 [profile.release]
-lto=true
-strip="debuginfo"
+#lto=true
+#strip="debuginfo"
