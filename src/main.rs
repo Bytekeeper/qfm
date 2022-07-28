@@ -222,7 +222,7 @@ impl eframe::App for MyApp {
                                     {
                                         self.push_dir(entry.path);
                                     } else {
-                                        std::thread::spawn(|| open::that(entry.path).ok());
+                                        open::that(entry.path).ok();
                                         frame.quit();
                                     }
                                 }
